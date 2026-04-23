@@ -27,13 +27,13 @@
         <main class="main-content">
             <!-- Primary Actions -->
             <section class="button-section">
-                <a href="https://sayo.eazymenu.in/" rel="noopener noreferrer" class="button button-primary" id="view-menu-link">
+                <a href="https://sayo.eazymenu.in/" target="_blank" rel="noopener noreferrer" class="button button-primary" id="view-menu-link">
                     View Menu
                 </a>
                 <a href="https://sayosaudi.com/contact.html" target="_blank" rel="noopener noreferrer" class="button button-primary">
                     Contact Us
                 </a>
-                <a href="https://maps.app.goo.gl/1SnvLSN3PqY8g3Jo9"  target="_blank" class="button button-primary">
+                <a href="https://maps.app.goo.gl/zM1eVrKrXudwj7TG9"  target="_blank" class="button button-primary">
                     Find Us on Google Maps
                 </a>
             </section>
@@ -83,9 +83,8 @@
             };
 
             viewMenuLink.href = getMenuUrl();
-            viewMenuLink.addEventListener("click", function (event) {
-                event.preventDefault();
-                window.location.href = getMenuUrl();
+            viewMenuLink.addEventListener("click", function () {
+                viewMenuLink.href = getMenuUrl();
             });
         })();
     </script>
